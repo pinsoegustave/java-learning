@@ -3,26 +3,26 @@ public class OperatorsPractice {
 
         // Demonstrate PEMDAS
         int x = 3 + 4 * 5;
-//        System.out.println(x);
-//
-//        // String concatenation
-//        String myString =  "abc" + "def";
-//        System.out.println(myString);
-//
-//        String str1 = "abc";
-//        String str2 = "xyz";
-//        String str3 = str1 + str2;
-//        System.out.println(str3);
+        System.out.println(x);
+
+        // String concatenation
+        String myString =  "abc" + "def";
+        System.out.println(myString);
+
+        String str1 = "abc";
+        String str2 = "xyz";
+        String str3 = str1 + str2;
+        System.out.println(str3);
 
         // Combine operators
-//        x = 10;
-//        x += 4;  // This adds 4 to x
-//        System.out.println(x);
-//        x++;   // This adds 1 to x
-//        System.out.println(x);
-//        x *= 6;
-//        System.out.println(x);
-//        System.out.println(9 % 4);
+        x = 10;
+        x += 4;  // This adds 4 to x
+        System.out.println(x);
+        x++;   // This adds 1 to x
+        System.out.println(x);
+        x *= 6;
+        System.out.println(x);
+        System.out.println(9 % 4);
 
         // Longer Example: Sample quiz question
         int a = 3;
