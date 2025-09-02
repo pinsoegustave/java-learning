@@ -2,10 +2,10 @@
 public class PinsoeGustaveHW1 {
     public static void main(String[] args) {
 
-        System.out.println("Hello and welcome!");
+        String firstName;
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        // Assign variables,
+        firstName = "Pinsoe";
+        System.out.println("My name is: "+ firstName);
     }
 }
