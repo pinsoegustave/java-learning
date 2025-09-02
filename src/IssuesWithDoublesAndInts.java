@@ -3,7 +3,8 @@ public class IssuesWithDoublesAndInts {
 
         // Java uses the integer division
         double minute= 59;
-        System.out.println(minute/60.0);
+        int numMinutePerHour = 60;
+        System.out.println((double)minute/numMinutePerHour);   // Casting
 
         // More Examples
         double test = 2;
