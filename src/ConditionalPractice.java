@@ -14,8 +14,11 @@ public class ConditionalPractice {
         if (age > 15) {
             System.out.println("You are eligible for a permit");
 //            System.out.println("abc");
-        }
-        else {
+            if (age > 16) System.out.println("Full Permit");
+            else System.out.println("Junior Permit");
+        } else if (age == 15) {
+            System.out.println("Soo close! come back next year");
+        } else {
             System.out.println("Sorry, you are not eligible for a permit");
         }
 
