@@ -23,5 +23,20 @@ public class PinsoeGustaveHW1 {
         System.out.print("My name is "+ firstName+" "+lastName +"and I am "+age+ " years old \n");
         System.out.println(favoriteFood+ " is my favorite food.");
         System.out.println("It is "+ isWinter +" that is winter");
+
+//        Question 2:
+        int a = 5;
+
+        System.out.println(a);
+        a += 24;
+        System.out.println(a);
+        a /= 4;
+        System.out.println(a);
+        a *= 15;
+        System.out.println(a);
+        a -= 7;
+        System.out.println(a);
+
+
     }
 }
