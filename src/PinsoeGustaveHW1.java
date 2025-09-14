@@ -50,20 +50,63 @@ public class PinsoeGustaveHW1 {
 //        System.out.println("Full Name "+ firstName +" "+ lastName);
 
 //        Question 4:
-        Scanner p = new Scanner(System.in);
-        System.out.println("Enter player name: ");
-        String playerName = p.nextLine();
-        System.out.println("Enter total games played: ");
-        String totalGamesPlayed = p.nextLine();
-        int totalGames = Integer.parseInt(totalGamesPlayed);
-        System.out.println("Enter the total goals: ");
-        String totalGoals = p.nextLine();
-        int goals = Integer.parseInt(totalGoals);
+//        Scanner p = new Scanner(System.in);
+//        System.out.println("Enter player name: ");
+//        String playerName = p.nextLine();
+//        System.out.println("Enter total games played: ");
+//        String totalGamesPlayed = p.nextLine();
+//        int totalGames = Integer.parseInt(totalGamesPlayed);
+//        System.out.println("Enter the total goals: ");
+//        String totalGoals = p.nextLine();
+//        int goals = Integer.parseInt(totalGoals);
+//
+//        double ppg;
+//        ppg = (double) goals / totalGames;
+////        System.out.println(playerName + " has a goals per game average of "+ ppg + ", where "+ playerName+" is the player's name and "+ ppg+" is the calculated average.");   // Test with full decimal places(34.8 = 0.23529411764705882)
+//        System.out.printf( playerName + " has a goals per game average of %.2f, where "+ playerName+" is the player's name and %.2f is the calculated average.", ppg, ppg);
 
-        double ppg;
-        ppg = (double) goals / totalGames;
-//        System.out.println(playerName + " has a goals per game average of "+ ppg + ", where "+ playerName+" is the player's name and "+ ppg+" is the calculated average.");   // Test with full decimal places(34.8 = 0.23529411764705882)
-        System.out.printf( playerName + " has a goals per game average of %.2f, where "+ playerName+" is the player's name and %.2f is the calculated average.", ppg, ppg);
+//        Question 5:
+        String numM = "15";
+        String numN = "33";
+
+        int numO = 5;
+        int numP = 6;
+
+        double numQ = 4;
+        double numR = 3;
+
+        int totalA = numO - numP;
+        System.out.println(totalA);   //-1
+
+        double totalB = numQ + numP*2;
+        System.out.println(totalB);   //40.0
+
+        String totalC = numR + numP + numN;
+        System.out.println(totalC);  //3633
+
+        String totalE = numQ + numO + numM;
+        System.out.println(totalE);  //4515
+
+        String totalF = numN + numO + numP;
+        System.out.println(totalF);  //3356
+
+        int totalG = numP / numO;
+        System.out.println(totalG);  //1
+
+        double totalH = numP / numQ;
+        System.out.println(totalH);  //1.5
+
+        int i = -9;
+        int j = 4;
+
+        int k = i/j;
+        System.out.println(k);  //-2
+
+        int m = 6 + i/j;
+        System.out.println(m); //4
+
+        String bla = numO + numP + numM + numQ + i;
+        System.out.println(bla); //Err
 
     }
 }
