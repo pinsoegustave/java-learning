@@ -98,7 +98,7 @@ public class Lab3 {
         }
 
 //        Switch statement can't be a good fit because we have to test between two values
-//
+//        We use multiple && and || operators because we need two check two conditions to get the value.
 
         input.close();
     }
