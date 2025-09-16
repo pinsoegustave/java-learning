@@ -27,5 +27,14 @@ public class Whileloop {
 
         System.out.println("Done");
 
+//        Break and contine example
+        int n = 0;
+        while (n < 10) {
+            n++;
+//            if (n == 3) break;
+            if (n == 3) continue;
+            System.out.println(n);
+        }
+
     }
 }
