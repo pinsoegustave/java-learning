@@ -75,14 +75,16 @@ check if the number is correct.).
 *Why did you organize your loop this way?
 *How does your setup make sure the game ends after the correct number of
 tries?*/
-
+//        Variable declaration
         Random r = new Random();
         Scanner x = new Scanner(System.in);
 
+//        Use Random class to help computer pick a number in the range 1 - 20
         int guessNumber = r.nextInt(20) + 1;
         int numTries = 0;
         boolean correctGuess = false;
 
+//        Using while loop to help me control the number of tries and checking if the user gets it correct.
         while (numTries < 5) {
             System.out.println("Enter the number you guess: ");
             String userInput = x.nextLine();
@@ -90,11 +92,14 @@ tries?*/
 
             numTries++;
 
+//            Condition to check if the number is correct
             if (guessUser == guessNumber) {
                 System.out.println("You got it! The number was "+ guessNumber);
                 correctGuess = true;
+//                Used break to stop the program when the user wins
                 break;
             }
+//            Condition to check if the number is lower than the guessed number
             else if (guessUser < guessNumber) {
                 System.out.println("Too low.");
             } else {
