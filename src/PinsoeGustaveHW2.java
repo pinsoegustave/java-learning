@@ -58,7 +58,7 @@ public class PinsoeGustaveHW2 {
         int userDamage = Integer.parseInt(getUserDamage);
 
 //        Operation to get player's health after the damage
-        int healthLeft = userDamage - charHealth;
+        int healthLeft = charHealth - userDamage;
 
         if (healthLeft > 0) {
             charHealth = healthLeft;
@@ -70,12 +70,13 @@ public class PinsoeGustaveHW2 {
             String answer = getAnswer.toLowerCase();
 
             if (answer.equals("yes")) {
-                charHealth += 50;
-                System.out.println("The spell is successful, you survived the attack!!. You are left with "+ charHealth+" health life");
+                healthLeft += 50;
+                System.out.println("The spell is successful, you survived the attack!!. You are left with "+ healthLeft+" health life");
             } else {
                 System.out.println("Sorry, You are dead!!");
             }
         }
         System.out.println("Thanks for playing");
+
     }
 }
