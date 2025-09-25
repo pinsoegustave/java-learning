@@ -26,6 +26,24 @@ public class PinsoeGustaveHW2 {
         }
 
 //        Question 2
+//        Get age from keyboard input
+        System.out.println("Enter your age: ");
+        String getAge = s.nextLine();
+        int age = Integer.parseInt(getAge);
 
+//        Condition to check Secret club #1
+        if (age >= 26 || age % 3 == 0) {
+            System.out.println("You may enter Secret Club #1");
+        }
+        else {
+            System.out.println("Sorry, you cannot enter Secret club");
+        }
+//         Condition to check Secret club #2
+        if (age >= 26 && age % 3 == 0) {
+            System.out.println("You may enter Secret Club #2");
+        }
+        else {
+            System.out.println("Sorry, you cannot enter the Secret Club");
+        }
     }
 }
