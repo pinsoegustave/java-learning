@@ -45,5 +45,37 @@ public class PinsoeGustaveHW2 {
         else {
             System.out.println("Sorry, you cannot enter the Secret Club");
         }
+
+//        Question 3:
+//        Get user's health
+        System.out.println("Enter your character's health(1-70): ");
+        String getCharHealth = s.nextLine();
+        int charHealth = Integer.parseInt(getCharHealth);
+
+//        Get user's damage
+        System.out.println("Enter the damage taken (1-70): ");
+        String getUserDamage = s.nextLine();
+        int userDamage = Integer.parseInt(getUserDamage);
+
+//        Operation to get player's health after the damage
+        int healthLeft = userDamage - charHealth;
+
+        if (healthLeft > 0) {
+            charHealth = healthLeft;
+            System.out.println("You survived the attack!! You are left with "+ charHealth);
+        }
+        else {
+            System.out.println("Do you need a health boost spell? (Enter 'yes' or 'no'): ");
+            String getAnswer = s.nextLine();
+            String answer = getAnswer.toLowerCase();
+
+            if (answer.equals("yes")) {
+                charHealth += 50;
+                System.out.println("The spell is successful, you survived the attack!!. You are left with "+ charHealth+" health life");
+            } else {
+                System.out.println("Sorry, You are dead!!");
+            }
+        }
+        System.out.println("Thanks for playing");
     }
 }
