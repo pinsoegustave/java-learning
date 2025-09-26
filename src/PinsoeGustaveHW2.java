@@ -60,15 +60,18 @@ public class PinsoeGustaveHW2 {
 //        Operation to get player's health after the damage
         int healthLeft = charHealth - userDamage;
 
+//        Display the player information after the damage
         if (healthLeft > 0) {
             charHealth = healthLeft;
             System.out.println("You survived the attack!! You are left with "+ charHealth);
         }
         else {
+//            Ask player if they need a health boost
             System.out.println("Do you need a health boost spell? (Enter 'yes' or 'no'): ");
             String getAnswer = s.nextLine();
             String answer = getAnswer.toLowerCase();
 
+//            Condition to add a player health boost
             if (answer.equals("yes")) {
                 healthLeft += 50;
                 System.out.println("The spell is successful, you survived the attack!!. You are left with "+ healthLeft+" health life");
@@ -79,10 +82,12 @@ public class PinsoeGustaveHW2 {
         System.out.println("Thanks for playing");
 
 //    Question 4:
+//        Get month number from a user
         System.out.println("Enter the number for a month: ");
         String getMonth = s.nextLine();
         int month = Integer.parseInt(getMonth);
 
+//        Switch statement to display month information
         switch (month) {
             case 0: {
                 System.out.println("In January is snowed an average of 7.6 days");
