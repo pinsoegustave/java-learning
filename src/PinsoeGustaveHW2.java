@@ -78,5 +78,52 @@ public class PinsoeGustaveHW2 {
         }
         System.out.println("Thanks for playing");
 
+//    Question 4:
+        System.out.println("Enter the number for a month: ");
+        String getMonth = s.nextLine();
+        int month = Integer.parseInt(getMonth);
+
+        switch (month) {
+            case 0: {
+                System.out.println("In January is snowed an average of 7.6 days");
+                System.out.println("Each snowfall had an average of 16.6 days");
+                break;
+            }
+            case 1: {
+                System.out.println("In February is snowed an average of 9.3 days");
+                System.out.println("Each snowfall had an average of 20.7 days");
+                break;
+            }
+            case 2: {
+                System.out.println("In March is snowed an average of 3.6 days");
+                System.out.println("Each snowfall had an average of 7.9 days");
+                break;
+            }
+            case 3: {
+                System.out.println("In April is snowed an average of 1.1 days");
+                System.out.println("Each snowfall had an average of 2.1 days");
+                break;
+            }
+            case 9: {
+                System.out.println("In October is snowed an average of 0.9 days");
+                System.out.println("Each snowfall had an average of 1.2 days");
+                break;
+            }
+            case 10: {
+                System.out.println("In November is snowed an average of 1.6 days");
+                System.out.println("Each snowfall had an average of 3.4 days");
+                break;
+            }
+            case 11: {
+                System.out.println("In December is snowed an average of 3.0 days");
+                System.out.println("Each snowfall had an average of 8.2 days");
+                break;
+            }
+            default: {
+                System.out.println("There is no data for the month entered.");
+            }
+        }
     }
+
+
 }
