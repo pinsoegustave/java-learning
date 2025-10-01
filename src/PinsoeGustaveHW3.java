@@ -17,6 +17,10 @@ public class PinsoeGustaveHW3 {
                 System.out.println("Year "+ x);
             }
         }
+
+//        Question 2:
+        System.out.println("Welcome to the Maths practice!");
+
     }
 
 }
