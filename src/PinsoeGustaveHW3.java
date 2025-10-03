@@ -57,7 +57,7 @@ public class PinsoeGustaveHW3 {
 //            Display the messages
             System.out.println("Number of questions correct: "+correctCount);
             System.out.println("Number of questions incorrect: "+incorrectCount);
-            System.out.println("Thanks for playing");
+            System.out.println("Thanks for playing!!!");
     }
 
 }
