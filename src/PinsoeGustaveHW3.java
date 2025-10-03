@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class PinsoeGustaveHW3 {
     public static void main(String[] args) {
 
@@ -19,8 +22,42 @@ public class PinsoeGustaveHW3 {
         }
 
 //        Question 2:
+        Scanner s = new Scanner(System.in);
+        Random r = new Random();
+
         System.out.println("Welcome to the Maths practice!");
 
+        int correctCount = 0;
+        int incorrectCount = 0;
+        String userInput = "";
+
+        while (!userInput.equals("quit")) {
+//            Generate numbers and calculate answer first
+            int firstNum = r.nextInt(1, 21);
+            int secondNum = r.nextInt(1, 11);
+            int correctAnswer = firstNum - secondNum;
+
+//            Asking the question
+            System.out.println("What is "+firstNum+" - "+secondNum+" ? ");
+            userInput = s.nextLine();
+
+//            Check if the answer is correct
+            if (!userInput.equals("quit")) {
+                int userAnswer = Integer.parseInt(userInput);
+                if (userAnswer == correctAnswer) {
+                    System.out.println("That's correct.");
+                    correctCount++;
+                }
+                else {
+                    System.out.println("Sorry, the correct answer is "+correctAnswer+".");
+                    incorrectCount++;
+                }
+            }
+        }
+//            Display the messages
+            System.out.println("Number of questions correct: "+correctCount);
+            System.out.println("Number of questions incorrect: "+incorrectCount);
+            System.out.println("Thanks for playing");
     }
 
 }
