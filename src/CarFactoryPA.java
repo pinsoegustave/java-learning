@@ -10,6 +10,7 @@ public class CarFactoryPA {
 
 //    Display the cars
     public void displayCars() {
+        System.out.println("PA Factory: ");
         System.out.println("car1 = "+car1);
         System.out.println("car2 = " + car2);
     }
