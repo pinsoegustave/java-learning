@@ -14,5 +14,8 @@ public class CarDriver {
         pa.displayCars();
         System.out.println();
         ny.displayCars();
+
+//        Display the total
+        System.out.println("Total cars created: "+ Car.NUM_CARS);
     }
 }

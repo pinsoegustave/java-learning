@@ -1,5 +1,8 @@
 public class Car {
 
+//    Static variables
+    public static int NUM_CARS = 0;
+
 //    Instance variables
     private String make, model, color;
 
@@ -8,6 +11,9 @@ public class Car {
         make = argMake;
         model = argModel;
         color = argColor;
+
+//        Keep track of number of cars created
+        NUM_CARS++;
     }
 
 //    Printing
