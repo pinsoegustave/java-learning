@@ -22,5 +22,14 @@ public class ArrayPractice {
 
 //        Create another array using the shortcut
         int[] numbers = {10, 20, 30, 40, 50, 60, 70, 80};
+
+        int total = 0;
+        for (int n: numbers) {
+            total += n;
+        }
+        System.out.println("Total ="+ total);
+
+//        Demonstrate how copying arrays is really bad
+
     }
 }
