@@ -1,3 +1,3 @@
 Learning Java in a class course
 
-#Duquesne #COSC 
+#Duquesne #COSC #Freshman #Year1
