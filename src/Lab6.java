@@ -1,0 +1,2 @@
+public class Lab6 {
+}
