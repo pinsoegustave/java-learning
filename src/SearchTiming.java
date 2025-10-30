@@ -43,5 +43,33 @@ public class SearchTiming {
         endTime = System.currentTimeMillis();
         System.out.println("Linear search Time: "+ (endTime - startTime));
         System.out.println("Num comparisons: "+ numComparisons);
+
+//        Binary search
+        startTime = System.currentTimeMillis();
+        numComparisons = 0;
+
+        int lower = 0;
+        int upper = numItems - 1;
+        int middle;
+        while (lower <= upper) {
+//            Calculate the middle position
+            middle = (upper+lower)/2;
+
+//            Check the value at the middle position
+            numComparisons++;
+            if (numbers[middle] == desiredNumber) {
+                System.out.println("Binary search: Found at pos"+ middle);
+                break;
+            }
+            else if (desiredNumber < numbers[middle]) {
+                upper = middle - 1;
+            }
+            else {  // desiredNumber > numbers[middle]
+                lower = middle + 1;
+            }
+        }
+        endTime = System.currentTimeMillis();
+        System.out.println("Binary search time: "+ (endTime - startTime));
+        System.out.println("Num comparisons: "+ numComparisons);
     }
 }
