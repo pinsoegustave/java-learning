@@ -2,12 +2,11 @@ public class Practices {
 
     public static void main(String[] args) {
 
-        for (int rows = 1; rows <= 5; rows++) {
-            System.out.println(rows);
-            for (int columns = 1; columns <= 10; columns++) {
-                System.out.println(rows+"*"+columns+"="+ rows * columns);
-            }
-            System.out.println();
+        int[] numbers = { 56, 489, 21, 5, 77, 981, 44, 67, 81, 29 };
+
+//        Enhanced for loop
+        for (int x: numbers) {
+            System.out.println(x);
         }
     }
 }
