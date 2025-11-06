@@ -1,0 +1,8 @@
+public enum Flavor {
+    VANILLA,
+    STRAWBERRY,
+    CHOCOLATE,
+    PISTACCHIO,
+    COOKIES_AND_CREAM,
+    RASPBERRY
+}
