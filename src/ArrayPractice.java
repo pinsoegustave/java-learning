@@ -4,7 +4,7 @@ public class ArrayPractice {
 //        Create an array of 5 animals
         String[] animals = new String[5];
 
-//        Initialize all of the elements
+//        Initialize all the elements
         animals[0] = "Monkeys";
         animals[1] = "Birds";
         animals[2] = "Lions";
@@ -29,7 +29,7 @@ public class ArrayPractice {
         }
         System.out.println("Total ="+ total);
 
-//        Demonstrate how copying arrays is really bad
+//        Demonstrate how copying arrays is really worse
 
     }
 }
