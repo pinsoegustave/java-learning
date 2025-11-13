@@ -30,6 +30,7 @@ public class FilePractice {
 
         try {
             inputStream = new Scanner(new FileInputStream("MyFirstFile.txt"));
+            inputStream = new Scanner(new FileInputStream("README.md"));
 
         } catch (FileNotFoundException e) {
             System.out.println("Error opening file for read");
