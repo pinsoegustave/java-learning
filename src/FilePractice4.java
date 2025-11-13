@@ -29,23 +29,22 @@ public class FilePractice4 {
         outputStream.close();
 
 //        Read the data
-//        Scanner inputStream = null;
-//
-//        try {
-//            inputStream = new Scanner(new FileInputStream(fileName));
-//        } catch (FileNotFoundException e) {
-//            System.out.println("Error opening file for read");
-//            System.exit(1);
-//        }
-//
-//        int total = 0;
-//        int currentNumber;
-//
-//        while (inputStream.hasNextInt()) {
-//            currentNumber = inputStream.nextInt();
-//            total += currentNumber;
-//        }
-//        System.out.println("Total = "+ total);
+        Scanner inputStream = null;
+
+        try {
+            inputStream = new Scanner(new FileInputStream(fileName));
+        } catch (FileNotFoundException e) {
+            System.out.println("Error opening file for read");
+            System.exit(1);
+        }
+
+        int currentNumber;
+
+        while (inputStream.hasNextInt()) {
+            currentNumber = inputStream.nextInt();
+
+        }
+        System.out.println("Total = "+ );
 
 
     }
