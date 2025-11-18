@@ -1,51 +1,48 @@
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Scanner;
 
-public class FilePractice4 {
+public class FilePractice4 implements Serializable {
 
     public static void main(String[] args) {
-        String fileName =  "roster.txt";
+        String fileName =  "roster.dat";
         Student[] roster = new Student[4];
         roster[0] = new Student("Alice", 20);
         roster[1] = new Student("BobB", 32);
         roster[2] = new Student("Carol", 35);
         roster[3] = new Student("Doug", 20);
 
-//        Write data to the file
-        PrintWriter outputStream = null;
+//        Write the data to the file
+        ObjectOutputStream outputStream = null;
 
         try {
-            outputStream = new PrintWriter(new FileOutputStream(fileName));
-        } catch (FileNotFoundException e) {
-            System.out.println(" Error opening file for write");
-        }
+            outputStream = new ObjectOutputStream(new FileOutputStream(fileName));
 
-        for (Student n: roster) {
-            outputStream.println(n);
-        }
-        outputStream.close();
-
-//        Read the data
-        Scanner inputStream = null;
-
-        try {
-            inputStream = new Scanner(new FileInputStream(fileName));
-        } catch (FileNotFoundException e) {
-            System.out.println("Error opening file for read");
+            for (Student s: roster) {
+                outputStream.writeObject(s);
+            }
+            outputStream.close();
+        } catch (Exception e) {
+            System.out.println("Error writing to file");
+//            e.printStackTrace();
             System.exit(1);
         }
 
-        int currentNumber;
+//        Read the file and print the students
+        ObjectInputStream inputStream = null;
 
-        while (inputStream.hasNextInt()) {
-            currentNumber = inputStream.nextInt();
+        try {
+            inputStream = new ObjectInputStream(new FileInputStream(fileName));
 
+            while (true) {
+                Student nextStudent = (Student)inputStream.readObject();
+                System.out.println(nextStudent);
+            }
+        } catch (EOFException e) {
+            System.out.println("Finished reading file");
         }
-        System.out.println("Total = "+ );
-
+        catch (Exception e) {
+            System.out.println("Error reading the file");
+        }
 
     }
 }
