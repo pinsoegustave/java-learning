@@ -5,6 +5,7 @@ public class RecursionDriver {
 //        System.out.println(re.factorialNoRecursion(5));
 //        System.out.println(re.factorial(5));
 
-        System.out.println(re.fibonacci(10));
+//        System.out.println(re.fibonacci(10));
+        System.out.println(re.collatz(7));
     }
 }

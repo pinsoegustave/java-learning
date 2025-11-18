@@ -22,4 +22,13 @@ public class RecursionExample {
 //        Recursive case
         return fibonacci(n-1) + fibonacci(n-2);
     }
+
+    public boolean collatz(int n) {
+        System.out.println(n);
+        if (n == 1) return false;
+        if (n % 2 == 0) collatz(n/2);
+        else collatz((3*n)+1);
+
+        return false;
+    }
 }
